@@ -1,0 +1,30 @@
+{
+  "name": "router-state-io",
+  "version": "0.0.3",
+  "description": "Effectfully transforms state using history and fp-ts-routing",
+  "main": "dist/index.js",
+  "repository": "https://github.com/anthonyjoeseph/router-state-io",
+  "author": "anthonygabriele <anthonyjoeseph@gmail.com>",
+  "license": "MIT",
+  "prepublish": "tsc",
+  "types": "./dist/index.d.ts",
+  "peerDependencies": {
+    "@types/react": ">= 16.9.27",
+    "fp-ts": ">= 2.5.3",
+    "fp-ts-routing": ">= 0.5.3"
+  },
+  "dependencies": {
+    "@types/history": "^4.7.5",
+    "fp-ts": "^2.5.3",
+    "fp-ts-routing": "^0.5.3",
+    "history": "^4.10.1",
+    "monocle-ts": "^2.1.0",
+    "react-state-io": "^0.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.25.0",
+    "@typescript-eslint/parser": "^2.25.0",
+    "eslint": "^6.8.0",
+    "typescript": "^3.8.3"
+  }
+}
