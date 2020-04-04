@@ -34,7 +34,7 @@ const actionToNavResp = (a: H.Action): NS.NavigationResponse => {
  * @param conditionallyBlockTransition - Conditionally {@link https://github.com/ReactTraining/history/blob/master/docs/Blocking.md register a prompt message} to make sure the user wants to leave the current page before they navigate away
  * @returns an object of types that hook into 'withGlobalSideEffects'
  */
-const routerSideEffects = <S, P, R>(
+const routerStateIO = <S, P, R>(
   parser: R.Parser<R>,
   unParser: (r: R) => string,
   notFoundRoute: R,
@@ -155,4 +155,4 @@ const routerSideEffects = <S, P, R>(
   };
 };
 
-export default routerSideEffects;
+export default routerStateIO;
